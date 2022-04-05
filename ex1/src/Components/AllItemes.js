@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from 'react';
+import Itemes from './Itemes';
 
 const AllItemes = () => {
 
@@ -17,7 +18,7 @@ const AllItemes = () => {
     return <>
         <h2 className='my-3'>AllItemes</h2>
         {item.map(element => <div>
-            <input className='my-3' value={element.name} type='checkbox' /> {element.name}
+            <Itemes valueItem={element.name} /> {element.name}
         </div>)}
     </>;
 }
