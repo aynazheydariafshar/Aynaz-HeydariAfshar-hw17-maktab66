@@ -17,18 +17,14 @@ function App() {
       updatedList.splice(checkedInfo.indexOf(e.target.value), 1)
     }
       setCheckedInfo(updatedList)
-    }
-    
-    useEffect(() => {
-      console.log(checkedInfo)
-  }, [checkedInfo]) 
+    } 
 
 
   return (
     <DataContext.Provider value={{checkedInfo , getCheckInfo}}>
       <div className="App">
         <Row>
-          <Col>
+          <Col >
             <AllItemes />
           </Col>
           <Col>

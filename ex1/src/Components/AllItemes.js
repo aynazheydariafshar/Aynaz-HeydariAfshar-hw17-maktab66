@@ -18,8 +18,8 @@ const AllItemes = () => {
     }, []);
     
 
-    return <>
-        <h2 className='my-3'>AllItemes</h2>
+    return <div className='allitemes-div'>
+        <h2 className='py-3'>AllItemes</h2>
         {item.map((element , index) => <div>
             <Itemes 
                 keyid = {element.id} 
@@ -27,7 +27,7 @@ const AllItemes = () => {
                 handleOnchange = {(e) => itemCheckContext.getCheckInfo(e)}
                 /> {element.name}
         </div>)}
-    </>;
+    </div>;
 }
 
 

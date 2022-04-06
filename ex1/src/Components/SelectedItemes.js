@@ -4,8 +4,8 @@ import { DataContext } from './DataContext';
 const SelectedItemes = () => {
     const checkedItemContext = useContext(DataContext)
     
-    return <div>
-        <h2 className='my-3'>SelectedItems</h2>
+    return <div className='selected-div'>
+        <h2 className='py-3'>SelectedItems</h2>
         {checkedItemContext.checkedInfo.map(item => {
            return <p>{item}</p>;
         })}
