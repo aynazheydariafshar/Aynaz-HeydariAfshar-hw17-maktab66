@@ -24,7 +24,7 @@ function App() {
     <DataContext.Provider value={{checkedInfo , getCheckInfo}}>
       <div className="App">
         <Row>
-          <Col >
+          <Col>
             <AllItemes />
           </Col>
           <Col>
