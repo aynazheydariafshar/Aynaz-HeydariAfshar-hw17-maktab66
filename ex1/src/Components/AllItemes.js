@@ -5,7 +5,6 @@ import Itemes from './Itemes';
 const AllItemes = () => {
 
     const [item, setitem] = useState([])
-    const [listofchecked , setlistofchecked] = useState([])
     const itemCheckContext = useContext(DataContext)
 
     const getData = () => {
@@ -17,19 +16,6 @@ const AllItemes = () => {
     useEffect(() => {
         getData()
     }, []);
-
-    // const handleCheckbox = (e , index) => {
-    //     if(e.target.checked){
-    //         listofchecked.current.push({[e.target.id] : e.target.value})
-    //     }else{
-    //         listofchecked.current.filter((item,numindex) => numindex !== index)
-    //         // for(let i=0 ; i< listofchecked.current.length ; i++){
-    //         //     listofchecked.current.splice(i , 1)
-    //         // }
-    //     }
-    //     itemCheckContext.getCheckInfo(listofchecked.current)
-         
-    // }
     
 
     return <>
