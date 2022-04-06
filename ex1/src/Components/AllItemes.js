@@ -38,7 +38,7 @@ const AllItemes = () => {
             <Itemes 
                 keyid = {element.id} 
                 valueItem = {element.name}
-                handleOnchange = {(e) => itemCheckContext.getCheckInfo(e,index)}
+                handleOnchange = {(e) => itemCheckContext.getCheckInfo(e)}
                 /> {element.name}
         </div>)}
     </>;
