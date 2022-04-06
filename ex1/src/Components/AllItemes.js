@@ -1,4 +1,4 @@
-import React , {useState,useEffect,useContext, useRef} from 'react';
+import React , {useState,useEffect,useContext} from 'react';
 import { DataContext } from './DataContext';
 import Itemes from './Itemes';
 
@@ -20,12 +20,13 @@ const AllItemes = () => {
 
     return <div className='allitemes-div'>
         <h2 className='py-3'>AllItemes</h2>
-        {item.map((element , index) => <div>
+        {item.map(element => <div>
             <Itemes 
                 keyid = {element.id} 
                 valueItem = {element.name}
                 handleOnchange = {(e) => itemCheckContext.getCheckInfo(e)}
-                /> {element.name}
+                title = {element.name}
+                />
         </div>)}
     </div>;
 }
