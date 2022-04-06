@@ -7,6 +7,7 @@ const AllItemes = () => {
     const [item, setitem] = useState([])
     const itemCheckContext = useContext(DataContext)
 
+    //get data from json file
     const getData = () => {
         fetch('/json/checkboxes.json')
             .then((res) => res.json())

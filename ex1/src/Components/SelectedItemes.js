@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { DataContext } from './DataContext';
 
 const SelectedItemes = () => {
+    
     const checkedItemContext = useContext(DataContext)
     
     return <div className='selected-div'>
@@ -11,7 +12,5 @@ const SelectedItemes = () => {
         })}
     </div>;
 }
-
-
 
 export default SelectedItemes;

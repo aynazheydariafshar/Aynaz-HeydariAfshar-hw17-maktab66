@@ -9,7 +9,8 @@ const Itemes = ({valueItem , keyid , handleOnchange , title }) => {
         type='checkbox' 
         className='my-3'
         id={keyid}
-        onChange={handleOnchange} />
+        onChange={handleOnchange} 
+    />
     <label className='p-1'>{title}</label>
     </>
 }
