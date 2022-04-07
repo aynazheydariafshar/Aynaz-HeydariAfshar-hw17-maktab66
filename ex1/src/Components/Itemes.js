@@ -16,7 +16,10 @@ const Itemes = ({valueItem , keyid , handleOnchange , title }) => {
 }
 
 Itemes.propTypes = {
-    title : PropTypes.string
+    title : PropTypes.string,
+    keyid : PropTypes.number,
+    value : PropTypes.string,
+    handleOnchange : PropTypes.func
 };
 
 export default Itemes;
