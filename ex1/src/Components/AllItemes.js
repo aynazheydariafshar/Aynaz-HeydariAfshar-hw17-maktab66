@@ -23,7 +23,6 @@ const AllItemes = () => {
         <h2 className='py-3'>AllItemes</h2>
         {item.map(element => <div>
             <Itemes 
-                keyid = {element.id} 
                 valueItem = {element.name}
                 handleOnchange = {(e) => itemCheckContext.getCheckInfo(e)}
                 title = {element.name}
